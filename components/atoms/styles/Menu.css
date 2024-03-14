@@ -1,0 +1,51 @@
+#contenedor_menu{
+    display: flex;
+    right: 0;
+    justify-content: end;
+    margin-top: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#title{
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: x-large;
+    transform: rotate(180deg);
+    transition: all 1s;
+}
+
+
+
+#title_kevin{
+    transform: rotate(180deg);
+    transition: all 1s;
+    color: #358DDE;
+}
+#title_kevin.dark{
+    transform: rotate(360deg);
+    color: #fff;
+}
+
+#title_borge{
+    transform: rotate(360deg);
+    transition: all 1s;
+    color: #fff;
+}
+#title_borge.dark{
+    transform: rotate(180deg);
+    color: #1D2433;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+    margin-right: 30px;
+    color: white;
+}

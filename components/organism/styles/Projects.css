@@ -1,0 +1,38 @@
+#Project-container{
+    display: flex;
+    justify-content: center;
+}
+
+#Project-container #Project-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-top: 400px;
+    margin-bottom: 400px;
+}
+
+#Project-container #Project-list img{
+    width: 600px;
+    z-index: 0;
+    position: absolute;
+}
+
+#P-description{
+    color: #fff;
+    background-color: #358cde7e;
+    position: relative;
+    width: 500px;
+    height: 150px;
+    border-radius: 20px;
+    z-index: 1;
+    margin-left: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li{
+    list-style: none;
+}
+

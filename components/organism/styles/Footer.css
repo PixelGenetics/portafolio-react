@@ -1,0 +1,22 @@
+#footer_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    border-top: 2px solid #358DDE;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+
+#img_footer{
+    width: 25px;
+}

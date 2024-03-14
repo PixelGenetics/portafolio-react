@@ -1,0 +1,27 @@
+#body{
+    color: #fff;
+    text-align: left;
+    display: grid;
+    place-content: center;
+}
+
+#body.dark{
+    color: #fff;
+}
+
+#body-inner{
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+
+}
+
+#body-2{
+    font-size: 90px;
+    font-weight: 800;
+    color: #358DDE;
+}
+
+#body-2.dark{
+    color: #1D2433;
+}
