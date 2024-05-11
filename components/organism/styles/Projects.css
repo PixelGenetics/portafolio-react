@@ -36,3 +36,38 @@ ul li{
     list-style: none;
 }
 
+#project-main{
+    padding-top: 600px;
+
+}
+
+#project-body{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+#project-information h2{
+    display: flex;
+    justify-content: center;
+}
+#project-img img{
+    width: 800px;
+    border-radius: 20px;
+}
+
+#project-information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    color: #ffffff;
+    margin-right: 100px;
+    row-gap: 60px;
+}
+
+#project-body ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

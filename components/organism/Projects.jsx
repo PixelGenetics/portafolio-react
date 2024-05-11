@@ -1,24 +1,37 @@
-import React from 'react'
-import img from '../../assets/196354278-imagen-de-caricatura-de-un-astronauta-sentado-en-una-luna-ilustración-de-alta-calidad.jpg'
+import React, { useState,useEffect } from 'react'
 import './styles/Projects.css'
+import datos from '../../config/data'
+
 
 const Projects = () => {
+  const [data,setData] = useState([])
+
+  useEffect(() => {
+    setData(datos);
+  },[])
+  
   return (
-    <div id='Project-container'>
-      <div id='Project-list'>
-        <img src={img} alt="" />
-        <div id='P-description'>
-          <h2>Whatever!</h2>
+    <div id='project-main'>
+      {data.map((project) => (
+        <div key={project.id} id="project-body">
+          <div id='project-img'>
+          <img src={project.img} alt={project.title} />
+          </div>
+          <div id='project-information'>
+            <h2>{project.title}</h2>
+            <p id='project-resumen'>{project.resumen}</p>
           <ul>
-            <li>Tech1</li>
-            <li>Tech2</li>
-            <li>Tech3</li>
+          {project.technologies.map((tech, index) => (
+            <li key={index}>
+                <img src={tech.image} alt={tech.name} />
+            </li>
+          ))}
           </ul>
-          <span>Desciption</span>
+          </div>
         </div>
-      </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
 export default Projects
