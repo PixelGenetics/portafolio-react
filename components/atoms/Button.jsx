@@ -20,6 +20,7 @@ const Button = () => {
       document.querySelector('#body-1')?.classList.add('dark');
       document.querySelector('#body-2')?.classList.add('dark');
       document.querySelector('#footer')?.classList.add('dark');
+      document.querySelector('#project-resumen')?.classList.add('dark');
     } else {
       document.body.classList.remove('dark');
       document.querySelector('button')?.classList.remove('dark');
@@ -30,6 +31,7 @@ const Button = () => {
       document.querySelector('#body-1')?.classList.remove('dark');
       document.querySelector('#body-2')?.classList.remove('dark');
       document.querySelector('#footer')?.classList.remove('dark');
+      document.querySelector('#project-resumen')?.classList.remove('dark');
     }
   }, [darkMode]);
 
